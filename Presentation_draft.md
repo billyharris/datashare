@@ -1,4 +1,4 @@
-A tool for visualising data
+A tool for visualising waste management data
 ========================================================
 author: Billy Harris
 date: August 2015
@@ -14,6 +14,8 @@ Coursera Data Science specialization.
 - Tool outputs values for three years and plots a time series vs Scottish median performance.
 - All data downloaded from the website of the Scottish Environmental Protection Agency (SEPA).
 
+Tool available at: https://billyharris.shinyapps.io/shiny
+
 How it works
 ========================================================
 
@@ -24,12 +26,23 @@ based on the user's selections.
      - Alternative would be to host data remotely and load using read.table.
 - This is then passed back to ui.R for display.
 
-Slide With Code
+Example of graphical output
 ========================================================
+<small> (Data and function have echo = FALSE to enable display) </small>
 
 
 
-Slide With Plot
-========================================================
+
+```r
+makeplot("Edinburgh","recycling")
+```
 
 ![plot of chunk unnamed-chunk-2](Presentation_draft-figure/unnamed-chunk-2-1.png) 
+
+Applications of this tool
+========================================================
+
+- Could be expanded to enable comparison of authorities on a wider range of metrics.
+- Allows decision makers to explore data interactively.
+- Could be adapted to supply data to consumers (e.g. school or hospital performance) on a range of metrics.
+
